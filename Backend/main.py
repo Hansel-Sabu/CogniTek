@@ -86,7 +86,7 @@ print(f"✅ GPU Mode: {device.upper()}")
 
 try:
     print("⏳ Loading Whisper (Perception) model...")
-    audio_model = whisper.load_model("base", device=device)
+    audio_model = whisper.load_model("medium", device=device)
     print("✅ Whisper Loaded. Ready for Perception.")
 except Exception as e:
     print(f"❌ MODEL LOAD FAILURE: {str(e)}")
